@@ -14,6 +14,7 @@
     "@hookform/resolvers": "^5.2.1",
     "@tailwindcss/vite": "^4.1.11",
     "aos": "^2.3.4",
+    "flowbite": "^4.0.2",
     "lucide-react": "^0.534.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

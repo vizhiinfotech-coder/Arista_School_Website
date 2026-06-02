@@ -5,9 +5,6 @@
   text-align: center;
 }
 
-@plugin "flowbite/plugin";
-
-
 .logo {
   height: 6em;
   padding: 1.5em;

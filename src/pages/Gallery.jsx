@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   Image,
   X,
@@ -15,6 +15,18 @@ const Gallery = () => {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState('All');
+
+  // Prevent body scroll when slideshow modal is open
+  useEffect(() => {
+    if (selectedAlbum !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [selectedAlbum]);
 
   // Get unique categories for filtering
   const categories = useMemo(() => {
@@ -195,7 +207,7 @@ const Gallery = () => {
 
       {/* Slideshow Modal */}
       {selectedAlbum && currentAlbum && currentImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col">
+        <div className="fixed inset-0 bg-black bg-opacity-95 z-[100] flex flex-col">
           {/* Header */}
           <div className="flex items-center justify-between p-4 bg-black bg-opacity-50">
             <div className="text-white">
@@ -214,7 +226,7 @@ const Gallery = () => {
           </div>
 
           {/* Main Image Display */}
-          <div className="flex-1 flex items-center justify-center relative p-4">
+          <div className="flex-1 flex items-center justify-center relative p-4 min-h-0">
             {/* Previous Button */}
             <button
               onClick={prevImage}
@@ -225,19 +237,21 @@ const Gallery = () => {
             </button>
 
             {/* Image */}
-            <div className="max-w-5xl max-h-full flex flex-col items-center">
-              <img
-                src={getImagePath(currentAlbum, currentImage.fileName)}
-                alt={currentImage.title}
-                className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-2xl"
-                onError={(e) => {
-                  console.error('Image failed to load:', currentImage.fileName);
-                  e.target.src = '/placeholder-image.jpg'; // Add a placeholder image to public folder
-                }}
-              />
-              <div className="mt-4 text-center max-w-3xl">
-                <h3 className="text-white text-2xl font-bold mb-2">{currentImage.title}</h3>
-                <p className="text-gray-300 text-lg">{currentImage.description}</p>
+            <div className="max-w-5xl h-full max-h-full flex flex-col items-center justify-center min-h-0">
+              <div className="flex-1 min-h-0 flex items-center justify-center">
+                <img
+                  src={getImagePath(currentAlbum, currentImage.fileName)}
+                  alt={currentImage.title}
+                  className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                  onError={(e) => {
+                    console.error('Image failed to load:', currentImage.fileName);
+                    e.target.src = '/placeholder-image.jpg'; // Add a placeholder image to public folder
+                  }}
+                />
+              </div>
+              <div className="mt-2 text-center max-w-3xl flex-shrink-0">
+                <h3 className="text-white text-xl md:text-2xl font-bold mb-1">{currentImage.title}</h3>
+                <p className="text-gray-300 text-sm md:text-base line-clamp-2">{currentImage.description}</p>
               </div>
             </div>
 
@@ -252,7 +266,7 @@ const Gallery = () => {
           </div>
 
           {/* Thumbnail Strip */}
-          <div className="bg-black bg-opacity-50 p-4 overflow-x-auto">
+          <div className="bg-black bg-opacity-50 p-4 overflow-x-auto no-scrollbar">
             <div className="flex gap-2 justify-center min-w-max mx-auto">
               {currentAlbum.images.map((img, idx) => (
                 <button
