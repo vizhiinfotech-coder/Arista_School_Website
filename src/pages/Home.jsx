@@ -174,12 +174,12 @@ const Home = () => {
       {/* Principal's Welcome Message */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div data-aos="fade-right">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
+            {/* <div data-aos="fade-right">
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center mr-4 overflow-hidden">
-                    {/* <GraduationCap className="text-white" size={32} /> */}
+                    <GraduationCap className="text-white" size={32} />
                     <img src={schoolInfo.leadership.principal.photo} alt={schoolInfo.leadership.principal.name} className="object-cover mt-8" />
                   </div>
                   <div>
@@ -199,7 +199,7 @@ const Home = () => {
                   <span className="ml-2 text-gray-600">Excellence in Education</span>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div data-aos="fade-left">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 A Message from Our Principal
