@@ -90,7 +90,7 @@ const Contact = () => {
 
     } catch (error) {
       console.error('Email sending failed:', error);
-      alert('Failed to send message. Please try again or contact us directly at mrspublicschool456@gmail.com');
+      alert('Failed to send message. Please try again or contact us directly at aristainternationalschool@gmail.com');
     } finally {
       setIsLoading(false);
     }
