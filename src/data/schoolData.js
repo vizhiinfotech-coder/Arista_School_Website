@@ -11,11 +11,10 @@ export const schoolInfo = {
   // Contact Information
   contact: {
     phone: {
-      principal: "+91 735872 2667",
       assistantOfficer: "+91 93601 66844"
     },
     email: {
-      school: "mrspublicschool456@gmail.com",
+      school: "aristainternationalschool@gmail.com",
     },
     address: {
       street: "Transport Nagar",
@@ -30,24 +29,24 @@ export const schoolInfo = {
   // Leadership Team
   leadership: {
     principal: {
-      name: "Dr.S.Pradeep",
+      name: "Mr.R.Suresh",
       position: "Principal",
       experience: "10+ years in education",
-      education: " M.Com,MBA,MSc-Psy,Yoga,MEd,MJMC,PhD.",
+      education: " M.sc.,M.Ed.,",
       description: "Passionate about creating inclusive learning environments that foster academic excellence and character development.",
       email: "mrspublicschool456@gmail.com",
-      phone: "+91 73587 22667",
+      phone: "+91 93601 66846",
       photo: "/Principal.jpeg"
     },
-    AssistantOfficer: {
-      name: "Mrs. Vasanthi.G",
-      position: "Assistant Officer",
-      experience: "3+ years in administration", 
-      education: "MCA, M.Phil, B.Ed.",
-      description: "Dedicated to implementing innovative teaching methodologies and supporting faculty development.",
-      email: "mrspublicschool456@gmail.com",
-      phone: "+91 93601 66846"
-    },
+    // AssistantOfficer: {
+    //   name: "Mrs. Vasanthi.G",
+    //   position: "Assistant Officer",
+    //   experience: "3+ years in administration", 
+    //   education: "MCA, M.Phil, B.Ed.",
+    //   description: "Dedicated to implementing innovative teaching methodologies and supporting faculty development.",
+    //   email: "mrspublicschool456@gmail.com",
+    //   phone: "+91 93601 66846"
+    // },
   },
 
   // Office Hours
@@ -89,9 +88,9 @@ export const schoolInfo = {
 export const departments = [
   {
     name: "Principal's Office",
-    phone: "+91 73587 22667",
+    phone: "+91 93601 66846",
     description: "Academic policies, student discipline, general school matters",
-    head : "Dr.S.Pradeep"
+    head : "R.Suresh"
   },
   {
     name: "Administration",
@@ -106,7 +105,6 @@ export const contactInfo = [
   {
     title: "Phone Numbers",
     details: [
-      { label: "Principal's Office", value: schoolInfo.contact.phone.principal },
       { label: "Assistant Officer", value: schoolInfo.contact.phone.assistantOfficer }
     ]
   },

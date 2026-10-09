@@ -9,8 +9,8 @@ export const emailjsConfig = {
   publicKey: 'RZqpyTTAPj3A_DUHl',       // Get this from EmailJS Dashboard > Account > General
   
   // School Configuration
-  schoolEmail: 'mrspublicschool456@gmail.com',
-  schoolName: 'Arista Secondary School',
+  schoolEmail: 'aristainternationalschool@gmail.com',
+  schoolName: 'Arista International Senior Secondary School',
   
   // Template Parameters Generator
   getTemplateParams: (formData) => ({
@@ -24,8 +24,8 @@ export const emailjsConfig = {
     message: formData.message,
     
     // School Information
-    to_email: 'mrspublicschool456@gmail.com',
-    school_name: 'Arista Secondary School',
+    to_email: 'aristainternationalschool@gmail.com',
+    school_name: 'Arista International Senior Secondary School',
     
     // Reply Configuration
     reply_to: formData.email,
