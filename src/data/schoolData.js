@@ -78,8 +78,9 @@ export const schoolInfo = {
   // Academic Programs
   academicPrograms: [
     "Pre-Primary (Nursery - UKG)",
-    "Primary (Class I - V)", 
-    "Middle School (Class VI - VIII)",
+    "Primary (Class I - III)", 
+    "Pre-Middle (Class IV - V)", 
+    "Middle (Class VI - VIII)",
     "Secondary (Class IX - X)",
   ]
 };

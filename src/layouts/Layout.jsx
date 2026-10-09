@@ -29,8 +29,8 @@ const Layout = ({ children }) => {
       <div className='fixed bottom-0 z-50 w-full'>
         <Marquee className="bg-yellow-300 p-1" speed={70} autoFill={true}>
           <div className='flex justify-center items-center gap-1'>
-            {/* <img src={saraswatiImg} className='h-10' alt="" /> */}
-            <p className='text-xl sm:text-lg lg:text-lg text-purple-900 font-bold'>Admissions Open for 2026 - 2027</p>
+            <img src={saraswatiImg} className='h-10' alt="" />
+            <p className='text-xl sm:text-lg lg:text-lg text-purple-900 font-bold'>Vijayadashami Admission Open</p>
             <p className='px-20'></p>
           </div>
         </Marquee>

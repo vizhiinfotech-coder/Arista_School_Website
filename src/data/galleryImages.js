@@ -177,8 +177,238 @@ export const galleryImages = [
     category: "Events",
     albumName: "Summer Camp 2026",
     albumFolder: "Summer_Camp_2026",
-    albumDescription: "Our annual Fruits Day celebration, where students showcase their creativity and learn about the importance of healthy eating through fun activities and displays.",
+    albumDescription: "Our students enjoy a fun-filled summer camp experience, engaging in various activities that promote teamwork, creativity, and physical fitness. The camp includes outdoor games, arts and crafts, and educational workshops.",
     coverImage: "/gallery/Summer_Camp_2026/img (1).jpg",
+    images: [
+      {
+        id: 1,
+        fileName: "img (1).jpg",
+      },
+      {
+        id: 2,
+        fileName: "img (2).jpg",
+      },
+      {
+        id: 3,
+        fileName: "img (3).jpg",
+      },
+      {
+        id: 4,
+        fileName: "img (4).jpg",
+      },
+      {
+        id: 5,
+        fileName: "img (5).jpg",
+      },
+      {
+        id: 6,
+        fileName: "img (6).jpg",
+      },
+      {
+        id: 7,
+        fileName: "img (7).jpg",
+      },
+      {
+        id: 8,
+        fileName: "img (8).jpg",
+      },
+      {
+        id: 9,
+        fileName: "img (9).jpg",
+      },
+      {
+        id: 10,
+        fileName: "img (10).jpg",
+      },
+      {
+        id: 11,
+        fileName: "img (11).jpg",
+      },
+      {
+        id: 12,
+        fileName: "img (12).jpg",
+      },
+      {
+        id: 13,
+        fileName: "img (13).jpg",
+      },
+      {
+        id: 14,
+        fileName: "img (14).jpg",
+      },
+      {
+        id: 15,
+        fileName: "img (15).jpg",
+      },
+      {
+        id: 16,
+        fileName: "img (16).jpg",
+      }, 
+      {
+        id: 17,
+        fileName: "img (17).jpg",
+      },
+      {
+        id: 18,
+        fileName: "img (18).jpg",
+      },
+      {
+        id: 19,
+        fileName: "img (19).jpg",
+      },
+      {
+        id: 20,
+        fileName: "img (20).jpg",
+      }
+    ]
+  },
+  {
+    id: 6,
+    category: "Events",
+    albumName: "Field Trip 2026 (Vellodu)",
+    albumFolder: "Field_Trip_Bird_Vellodu",
+    albumDescription: "Our students embark on an educational field trip to Vellodu, where they explore the local ecosystem, observe wildlife, and engage in hands-on learning experiences that complement their classroom studies.",
+    coverImage: "/gallery/Field_Trip_Bird_Vellodu/img (1).jpg",
+    images: [
+      {
+        id: 1,
+        fileName: "img (1).jpg",
+      },
+      {
+        id: 2,
+        fileName: "img (2).jpg",
+      },
+      {
+        id: 3,
+        fileName: "img (3).jpg",
+      },
+      {
+        id: 4,
+        fileName: "img (4).jpg",
+      },
+      {
+        id: 5,
+        fileName: "img (5).jpg",
+      },
+      {
+        id: 6,
+        fileName: "img (6).jpg",
+      },
+      {
+        id: 7,
+        fileName: "img (7).jpg",
+      },
+      {
+        id: 8,
+        fileName: "img (8).jpg",
+      },
+      {
+        id: 9,
+        fileName: "img (9).jpg",
+      },
+      {
+        id: 10,
+        fileName: "img (10).jpg",
+      },
+      {
+        id: 11,
+        fileName: "img (11).jpg",
+      }
+    ]
+  },
+  {
+    id: 7,
+    category: "Events",
+    albumName: "Extracurricular Activities 2026",
+    albumFolder: "ECA",
+    albumDescription: "Our students actively participate in a variety of extracurricular activities, including sports, arts, music, and drama. These activities help develop their talents, teamwork skills, and overall personality.",
+    coverImage: "/gallery/ECA/img (1).jpg",
+    images: [
+      {
+        id: 1,
+        fileName: "img (1).jpg",
+      },
+      {
+        id: 2,
+        fileName: "img (2).jpg",
+      },
+      {
+        id: 3,
+        fileName: "img (3).jpg",
+      },
+      {
+        id: 4,
+        fileName: "img (4).jpg",
+      },
+      {
+        id: 5,
+        fileName: "img (5).jpg",
+      },
+      {
+        id: 6,
+        fileName: "img (6).jpg",
+      },
+      {
+        id: 7,
+        fileName: "img (7).jpg",
+      },
+      {
+        id: 8,
+        fileName: "img (8).jpg",
+      },
+      {
+        id: 9,
+        fileName: "img (9).jpg",
+      },
+      {
+        id: 10,
+        fileName: "img (10).jpg",
+      },
+      {
+        id: 11,
+        fileName: "img (11).jpg",
+      },
+      {
+        id: 12,
+        fileName: "img (12).jpg",
+      },
+      {
+        id: 13,
+        fileName: "img (13).jpg",
+      },
+      {
+        id: 14,
+        fileName: "img (14).jpg",
+      },
+      {
+        id: 15,
+        fileName: "img (15).jpg",
+      },
+      {
+        id: 16,
+        fileName: "img (16).jpg",
+      }, 
+      {
+        id: 17,
+        fileName: "img (17).jpg",
+      },
+      {
+        id: 18,
+        fileName: "img (18).jpg",
+      },
+      {
+        id: 19,
+        fileName: "img (19).jpg",
+      }
+    ]
+  },
+  {
+    id: 8,
+    category: "Infrastructure",
+    albumName: "Play Ground",
+    albumFolder: "Infrastructure/Play_Ground",
+    albumDescription: "Our spacious playground provides students with a safe and enjoyable environment for physical activities, promoting fitness, teamwork, and outdoor play.",
+    coverImage: "/gallery/Infrastructure/Play_Ground/img (1).jpg",
     images: [
       {
         id: 1,
